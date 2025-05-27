@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>EcoFries</title>
-    </head>
-    <body>
-        <h1>EcoFries</h1>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facilis minima consectetur veniam temporibus provident quia cumque laudantium ex dolorem asperiores iste adipisci officiis debitis, nobis, quas impedit! Iste, laudantium!
-        </p>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFries</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>EcoFries</h1>
+
+  <nav class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+          <img src="menu-icon.png" alt="Menú" class="menu-icon">
+          <span class="menu-text">Menú</span>
+        </div>
+        <ul id="menu-list" class="submenu hidden">
+            <li><a href="Ayudanos.html">Ayúdanos</a></li>
+            <li><a href="Logo.html">Logo</a></li>
+            <li><a href="Producto.html">Producto</a></li>
+            <li><a href="Quienes_somos.html">Quiénes Somos</a></li>
+        </ul>
+    </nav>
+  
+  <main>
+    <h2>"Menos plástico, más papa, más vida"</h2>
+
+    <section>
+      <h3>Misión</h3>
+      <p>Ser una empresa reconocida por su impacto positivo, sostenible y el desarrollo de prácticas ecoamigables. Buscamos expandirnos con un modelo de negocio basado en la innovación y la responsabilidad social.</p>
+    </section>
+
+    <section>
+      <h3>Visión</h3>
+      <p>Brindar a nuestros clientes productos sostenibles a base de papa, ofreciendo alternativas deliciosas, saludables y ecológicas. Nos comprometemos con la calidad, el respeto por el medio ambiente y el desarrollo de una producción responsable.</p>
+    </section>
+
+    <section>
+      <h3>Valores</h3>
+      <ul>
+        <li><strong>Sostenibilidad:</strong> Priorizamos prácticas ecológicas en toda nuestra producción.</li>
+        <li><strong>Calidad:</strong> Garantizamos productos frescos, naturales.</li>
+        <li><strong>Innovación:</strong> Desarrollamos nuevas formas de aprovechar la papa.</li>
+        <li><strong>Transparencia:</strong> Actuamos con ética y honestidad en nuestras operaciones.</li>
+      </ul>
+    </section>
+  </main>
+  <img src="Fries.png" alt="Imagen de papas" />
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('menu-list').classList.toggle('hidden');
+    });
+  });
+  </script>
+</body>
 </html>
