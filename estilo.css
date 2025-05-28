@@ -1,0 +1,231 @@
+/* Reset básico */
+* {
+  margin: 0.2cm;
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.submenu {
+  list-style: none;          /* Sin viñetas */
+  padding-left: 10px;        /* Mueve el texto un poco a la izquierda */
+  margin: 10px 0 0 0;
+  background-color: #ffffff;
+}
+
+.submenu li {
+  margin-bottom: 10px;
+}
+
+.submenu a {
+  display: block;
+  font-size: 1cm;           /* Más grande */
+  color: #333;               /* Color solicitado */
+  text-decoration: none;
+  padding: 8px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+  background-color: #ddd;
+}
+
+/* Fuente general y fondo */
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 0.8cm;
+}
+
+h5 {
+  color: #333; /* verde ecológico */
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3cm;
+  text-align: center;
+}
+
+h4 {
+  color: #333; /* verde ecológico */
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1cm;
+  text-align: left;
+}
+
+/* Encabezados */
+h2 {
+  color: #333; /* verde ecológico */
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  margin: 2cm;
+  font-size: 2cm;
+  text-align: right;
+}
+
+h3 {
+  color: #38754f; /* verde ecológico */
+  margin-bottom: 0.5cm;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2cm;
+}
+
+h1 {
+  color: #af7208;
+  background-color: #FFE061;
+  font-size: 6cm;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0cm;
+}
+
+h2 {
+  margin-top: 150px;
+}
+
+h3 {
+  font-size: 1.5cm;
+  margin-top: 0.5cm;
+}
+
+/* Párrafos y listas */
+p, li {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navegación */
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #38754f;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2e593c;
+  text-decoration: underline;
+}
+
+/* Imágenes */
+img {
+  max-width: 100cm;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.imagen-full {
+  width: 100%;        /* Ocupa todo el ancho disponible */
+  height: auto;       /* Mantiene la proporción */
+  display: block;     /* Elimina espacio blanco alrededor */
+  margin: 0;          /* Sin márgenes adicionales */
+  padding: 0;
+}
+
+/* Formularios */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+input[type="submit"] {
+  background-color: #38754f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2e593c;
+}
+
+iframe {
+  width: 100%;
+  height: 80vh;        /* 80% de la altura de la ventana */
+  border: none;
+  display: block;
+  margin: 20px auto;
+}
+
+.menu {
+  background-color: #ffffff;
+  padding: 50px;
+  position: relative;
+}
+
+/* Imagen del icono del menú */
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  gap: 5px; /* Espacio entre imagen y texto */
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.menu-text {
+  font-size: 1.5cm;
+  color: #333;
+}
+
+/* Footer o enlaces de regreso */
+a {
+  color: #38754f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 40px;
+}
